@@ -1,0 +1,20 @@
+{
+  "name": "pueblos_magicosapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Salgado3/Pueblos-Magicos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Salgado3/Pueblos-Magicos/issues"
+  },
+  "homepage": "https://github.com/Salgado3/Pueblos-Magicos#readme"
+}
