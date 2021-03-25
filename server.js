@@ -22,6 +22,14 @@ let PueblosMagicos = {
     "wiki": "wiki goes here",
     "wikiTravel": "https://en.wikivoyage.org/wiki/Isla_Mujeres#Q1020769"
 },
+'Del Bajío International Airport': {
+    "Name": "Dolores Hidalgo",
+    "State": "Guanajuato",
+    "Airport": "BJX",
+    "image": "unspashy",
+    "wiki": "https://en.wikipedia.org/wiki/Dolores_Hidalgo",
+    "wikiTravel": "https://en.wikivoyage.org/wiki/Dolores_Hidalgo#Q958153"
+},
 'Unkown': {
     "Name": "No se",
     "State": "No se",
