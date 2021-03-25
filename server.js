@@ -6,7 +6,7 @@ const PORT = 8000
 app.use(cors())
 
 let PueblosMagicos = {
-    'Tulum': {
+'Cancun International Airport': {
     "Name": "Tulum",
     "State": "Quintana Roo",
     "Airport": "Cancun",
@@ -14,7 +14,7 @@ let PueblosMagicos = {
     "wiki": "wiki goes here",
     "wikiTravel": "https://en.wikivoyage.org/wiki/Tulum#Q725883"
 },
-'Isla Mujeres': {
+'Cancun International Airport': {
     "Name": "Isla Mujeres",
     "State": "Quintana Roo",
     "Airport": "Cancun",
@@ -36,11 +36,17 @@ app.get('/',(request, response) => {
     response.sendFile(__dirname + '/index.html')
 })
 
-app.get('/api/PueblosMagicos', (request, response)=>{
-    response.json(PueblosMagicos)
+app.get('/api/PueblosMagicos/:airportName', (request, response)=>{
+    const airport = request.params.airportName
+
+    if(PueblosMagicos[airport]){
+    response.json(PueblosMagicos[airport])
+}else{
+    response.json(PueblosMagicos['Unkown'])
+}
 })
 
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log(`Server running on ${PORT}`)
 })
 
