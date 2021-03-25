@@ -2,6 +2,8 @@
 const { response } = require('express')
 const express = require('express')
 const app = express()
+//allows to add new notes
+app.use(express.json())
 
 //this will be our API object with a list of pueblos magicos
 let notes = [
@@ -53,6 +55,13 @@ app.get('/api/notes/:id', (request, response) => {
 
       response.status(204).end()
   })
+
+  //allows us to add resources
+  app.post('/api/notes', (request, response) => {
+    const note = request.body
+    console.log(note)
+    response.json(note)
+    })
 
 const PORT = 3001 
 app.listen(PORT)
