@@ -2,7 +2,7 @@
   "name": "pueblos_magicosapi",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Salgado3/Pueblos-Magicos#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1"
   },
   "devDependencies": {
